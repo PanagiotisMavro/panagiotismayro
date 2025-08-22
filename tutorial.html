@@ -45,10 +45,11 @@
       transform: translateY(-5px);
     }
 
+    /* 🔹 Force all book images same size */
     .book-card img {
       width: 100%;
-      max-height: 380px;
-      object-fit: cover;
+      height: 280px;       /* same height for all */
+      object-fit: cover;   /* crop to fit nicely */
       border-radius: 8px;
     }
 
@@ -101,18 +102,16 @@
     </div>
 
     <div class="book-card">
-      <img src="Screenshot 2025-08-17 20:45:21.png" alt="Coming Soon">
+      <img src="https://m.media-amazon.com/images/I/81o2r1c9f3L._UF1000,1000_QL80_.jpg" alt="Coming Soon">
+      <h3>Coming Soon</h3>
+    </div>
+
+    <div class="book-card">
+      <img src="https://m.media-amazon.com/images/I/81CH-iMJw4L._UF894,1000_QL80_.jpg" alt="Coming Soon Small">
       <h3>Coming Soon</h3>
     </div>
   </div>
 
-  <div class="book-card">
-    <image src="https://m.media-amazon.com/images/I/81CH-iMJw4L._UF894,1000_QL80_.jpg" alt="Coming Soon">
-      <h3>Coming soon</h3>
-  </div>
-</div>
-
-  
   <script>
     function toggleMode() {
       document.body.classList.toggle("dark-mode");
